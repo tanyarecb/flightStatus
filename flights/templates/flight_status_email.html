@@ -1,0 +1,18 @@
+<!-- templates/flight_status_email.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Status Update</title>
+</head>
+<body>
+    <p>Dear {{ user.first_name }},</p>
+    <p>We wanted to inform you that the status of flight <strong>{{ flight.flight_number }}</strong> has been updated.</p>
+    <p><strong>Flight Status:</strong> {{ flight.status }}</p>
+    <p><strong>Departures:</strong> {{ flight.departures }}</p>
+    <p><strong>Departing To:</strong> {{ flight.departing_to }}</p>
+    <p><strong>Time:</strong> {{ flight.time }}</p>
+    <p>We apologize for any inconvenience this may cause.</p>
+    <p>Best regards,<br>Your Airline</p>
+</body>
+</html>
